@@ -1,0 +1,272 @@
+body {
+  background-color: #010001;
+  margin: 0;
+  font-family: 'Roboto', sans-serif;
+  color: #fff;
+}
+
+.header {
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 53px;
+}
+
+.header__nav-list,
+.header__nav-secondary-list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  list-style: none;
+}
+
+.header__nav-item a,
+.header__nav-secondary-item a {
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.header__nav-item a {
+  color: #fff;
+}
+
+.header__nav-secondary-item a {
+  color: #808080;
+}
+
+.main {
+  text-align: center;
+  padding-top: 120px;
+  padding-bottom: 30px;
+}
+
+.main__title {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 75px;
+  margin: 0;
+  margin-bottom: 26px;
+}
+
+.main__intro {
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 140%;
+  max-width: 268px;
+  margin: auto;
+}
+
+.main__intro::after {
+  content: '';
+  display: block;
+  height: 60px;
+  width: 1px;
+  background-color: #fff;
+  margin: auto;
+  margin-top: 26px;
+}
+
+.video {
+  height: 750px;
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+}
+
+.features {
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  padding: 100px 0;
+  position: relative;
+}
+
+.overview {
+  margin-bottom: 200px;
+}
+
+.overview__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  text-transform: uppercase;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.overview__table tr td {
+  width: 300px;
+  padding-top: 7px;
+  padding-bottom: 7px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 179.69%;
+}
+
+.perfomance__title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 140%;
+  margin: 0;
+  margin-bottom: 45px;
+}
+
+.perfomance__text {
+  max-width: 490px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 29px;
+}
+
+.rocket {
+  position: absolute;
+  top: 0;
+  right: 0;
+  max-height: 1600px;
+  z-index: 99;
+}
+
+.footer {
+  max-width: 1230px;
+  width: 90%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 100px;
+  padding-bottom: 130px;
+}
+
+.footer__logo {
+  width: 140px;
+}
+
+.footer__social {
+  margin-top: 40px;
+}
+
+.footer__social__list {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.footer__social__item a {
+  color: #fff;
+  font-size: 18px;
+  line-height: 21px;
+  text-decoration: none;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.footer__contact {
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+  margin-top: 28px;
+  margin-bottom: 30px;
+}
+
+.footer__contact-link {
+  font-size: 18px;
+  line-height: 21px;
+  color: #808080;
+}
+
+/* .footer__contact-btn {
+  color: #fff;
+  text-decoration: none;
+  border: 2px solid #FFFFFF;
+  padding: 20px 85px;
+  border-radius: 6px;
+} */
+
+.footer__contact-btn {
+  color: #ffffff;
+  min-width: 268px;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #fff;
+  box-sizing: border-box;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+@media (max-width: 960px) {
+  .rocket {
+    max-height: 1250px;
+  }
+
+  .overview__table tr td {
+    width: 230px;
+  }
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: center;
+    padding-top: 35px;
+  }
+
+  .header__nav {
+    margin-top: 20px;
+    margin-bottom: 10px;
+  }
+
+  .rocket {
+    max-height: 1000px;
+  }
+
+  .video {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .main {
+    padding-top: 50px;
+  }
+
+  .rocket {
+    position: static;
+    margin-bottom: 30px;
+  }
+
+  .overview {
+    margin-bottom: 0;
+  }
+
+  .overview__table tr td {
+    width: 150px;
+    font-size: 14px;
+  }
+
+  .footer {
+    padding-top: 0;
+  }
+
+  .footer__social__list {
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .footer__social__item {
+    margin-bottom: 10px;
+  }
+
+  .footer__contact {
+    text-align: center;
+  }
+}
